@@ -87,7 +87,8 @@ jobs:
             make resume.pdf &&
             mv resume.pdf Henry_Gann-Resume.pdf &&
             pdftoppm -png Henry_Gann-Resume.pdf Henry_Gann-Resume &&
-            mv Henry_Gann-Resume-1.png Henry_Gann-Resume.png
+            mv Henry_Gann-Resume-1.png Henry_Gann-Resume.png &&
+            make clean
           "
 
       - name: Release
